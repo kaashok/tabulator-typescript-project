@@ -1,0 +1,26 @@
+{
+  "name": "typescript-project-tabulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && npx tsc && npm run copy-assets",
+    "build:ts": "npx tsc",
+    "clean": "rimraf ./dist",
+    "copy-assets": "copyfiles -f src/index.html dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/requirejs": "^2.1.37",
+    "@types/tabulator-tables": "^5.5.8",
+    "copyfiles": "^2.4.1",
+    "requirejs": "^2.3.6",
+    "rimraf": "^5.0.5",
+    "tabulator-tables": "^5.5.4"
+  }
+}
